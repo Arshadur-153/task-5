@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'gren': 'rgb(180, 244, 97)',
+            'nav': 'rgb(249, 247, 243)',
+            'coin': 'rgba(17, 17, 17, 0.05)',
+
+          }
+        }
+      }
+    }
+  </script>
+  
+</head>
+
+<body>
+  <header class="sticky top-0 z-10 bg-opacity-95 bg-white">
+    <div class="bg-nav">
+      <div class="container mx-auto navbar pb-6">
+        <div class="navbar-start">
+          <button id="b-home" class="btn bg-gren">Home
+          </button>
+        </div>
+        <div class="navbar-center space-x-2 hidden md:flex">
+          <img src="assets/logo.png">
+          <p class="text-lg font-medium">Donate Bangladesh</p>
+        </div>
+        <div class="navbar-end space-x-2">
+          <img src="assets/coin.png">
+          <p class="text-base font-medium">5000</p>
+          <p class="text-base font-medium"></p>BDT</p>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+  <main class=" container mx-auto">
+    <p class="text-5xl font-bold px-5 py-10">
+      Important FAQ
+    </p>
+
+
+    <div class="collapse collapse-arrow ">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is the Documant Object Model(DOM)?</div>
+      <div class="collapse-content">
+        <p>It translates the content of an HTML document into a standardized object that functional programming languages like JavaScript can easily access and modify.<br>Since most web page events are driven by non-HTML code, all dynamic web pages rely on the DOM to display and function properly.</p>
+      </div>
+    </div>
+
+
+    <div class="collapse collapse-arrow ">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+      <div class="collapse-content">
+        <p>There are two methods to select an element from DOM : <br>
+          <br>
+          querySelector() : <br>
+          Returns the first matching Element node within the node's subtree. If no matching node is found, null is
+          returned.
+          <br>
+          <br>
+          querySelectorAll() : <br>
+          Returns a NodeList containing all matching Element nodes within the node's subtree, or an empty NodeList if no
+          matches are found.</p>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="collapse collapse-arrow">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,and why is it
+        useful?</div>
+      <div class="collapse-content">
+        <p>Event delegation is based event-bubbling method. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than<br>the level where the event was first received.</p>
+      </div>
+    </div>
+
+
+    <div class="collapse collapse-arrow">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and style using the
+        DOM?</div>
+      <div class="collapse-content">
+        <p>Changing an element's style (CSS) attributes is one of the ways in which the DOM can be used. For example, in the code below, the onfocus event handler method<br>is used to change the "input" element's style when the user clicks inside it. When this event occurs, the element's background color will change to purple.</p>
+      </div>
+    </div>
+
+
+  </main>
+  <script src="javascript/part.js"></script>
+</body>
+
+</html>
